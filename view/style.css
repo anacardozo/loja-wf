@@ -1,0 +1,371 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #36712D;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px #2c2c2c;
+    z-index: 99;
+}
+
+.navbar > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon-container img {
+    width: 100%;
+    max-width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+.nav-icon-container img:first-child {
+    margin-right: 1rem;
+}
+
+.header-inner-content {
+    background-color: #fff;
+}
+
+.header-botton-side {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 1rem;
+    background-color: #fff;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-botton-side-left {
+    flex-basis: 50%;
+    padding-right: 20px;
+}
+
+.header-botton-side-left h2 {
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 30px;
+}
+
+.header-botton-side-left p {
+    line-height: 1.5rem;
+    margin-bottom: 3.5rem;
+    font-size: 25px;
+    margin-left: 40px;
+}
+
+.header-botton-side-right {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-botton-side-right img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.gray-background {
+    background-color: #fff;
+}
+
+.page-inner-content {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.cols-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.cols {
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.cols > * {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cols > *:hover {
+    transform: translateY(-5px);
+}
+
+.botao-adicionar {
+    background-color: #36712D;
+    border-color: #36712D;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+
+.botao-adicionar .img-compra {
+    width: 30px;
+    height: 30px;
+}
+
+.valorproduto {
+    color: #FB6F92;
+}
+
+.header-botton-side-right img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.titulo {
+    color: #fff;
+}
+
+.footer {
+    background-color: #36712D;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;
+}
+
+.titulo2 {
+    color: #fff;
+    font-size: 18px;  
+
+}
+
+.tituloskin {
+    color: #36712D;
+    margin-left: -100px;
+}
+
+.compra {
+    color: #36712D;
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .nav-icon-container img {
+        max-width: 20px;
+        margin-right: 0.5rem;
+    }
+
+    .header-botton-side-left h2 {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .header-botton-side-left p {
+        font-size: 16px;
+    }
+
+    .header-botton-side-right img {
+        width: 90%;
+    }
+
+    .cols-3 {
+        grid-template-columns: 1fr; 
+    }
+
+    .footer {
+        height: 150px; 
+    }
+
+    .titulo2 {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .botao-adicionar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .cols img {
+        width: 100%;
+        height: auto;
+        object-fit: contain; 
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar > div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-icon-container img {
+        max-width: 25px;
+    }
+
+    .header-botton-side {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .header-botton-side-left {
+        flex-basis: 100%;
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .header-botton-side-left h2 {
+        font-size: 50px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .header-botton-side-left p {
+        font-size: 18px;
+        margin-left: 0;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .header-botton-side-right {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .header-botton-side-right img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .cols-3 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .page-inner-content {
+        margin: 0 1rem;
+    }
+
+    .footer {
+        height: 180px;
+    }
+
+    .titulo2 {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .botao-adicionar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .botao-adicionar .img-compra {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (min-width: 769px) {
+    .navbar > div {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-icon-container img {
+        max-width: 30px;
+    }
+
+    .header-botton-side {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    .header-botton-side-left {
+        flex-basis: 40%;
+        padding-right: 40px;
+    }
+
+    .header-botton-side-left h2 {
+        font-size: 80px;
+        text-align: left;
+    }
+
+    .header-botton-side-left p {
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .header-botton-side-right {
+        flex-basis: 60%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-botton-side-right img {
+        width: 100%;
+        max-width: 80%;
+        height: auto;
+    }
+
+    .cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .footer {
+        height: 200px;
+    }
+
+    .titulo2 {
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .botao-adicionar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .botao-adicionar .img-compra {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cols img {
+        width: 390px;
+        height: auto;
+        object-fit: cover;
+    }
+}
